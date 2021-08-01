@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Корзина</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/jquery.mask.js"></script>
+        <script src="js/order.js"></script>
+        <script src="js/calendar.js"></script>
+        <script src="js/scripts.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+            <header>
+                <div class="topheader">
+                    <div class="container">
+                        <div id="yourcity">
+                            <p>Ваш город: Москва</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainheader">
+                    <div class="container">
+                        <img src="images/mylogo.jpg" alt="" class="logo">
+                        <button type="button" class="basket">1</button>
+                        <div class="basket-label">В корзине 1 кепка</div>
+						<p>Велкам в правильный магазин Родина Сергея!</p>
+						<p>Только у нас, для отличных людей, можно классно прибарахлиться, затариться папиросами и правильным алкоголем!</p>
+						<p>Заходи скорее и меняй свои хрусты на ништяки!</p>
+                    </div>
+                </div>
+                <div class="bottomheader">
+                    <nav class="topmenu container">
+                        <span class="menupoint">
+                            <a href="#" class="line-point">Меню</a>
+                            <span>
+                                <a href="index.html" class="pulldown-point">Главная</a>
+                                <a href="catalog.html" class="pulldown-point">Каталог</a>
+                                <a href="product.html" class="pulldown-point">Продукт</a>
+                                <a href="order.html" class="pulldown-point">Корзина</a>
+                                <a href="contacts.html" class="pulldown-point">Контакты</a>
+                            </span>
+                        </span><span class="menupoint">
+                            <a href="catalog.html" class="line-point">Каталог</a>
+                            <span>
+                                <a href="#" class="pulldown-point">Кепки</a>
+                                <a href="#" class="pulldown-point">Шузы</a>
+                                <a href="#" class="pulldown-point">Бухло</a>
+                                <a href="#" class="pulldown-point">Сиги</a>
+                                <a href="#" class="pulldown-point">Закусь</a>
+                            </span>
+                        </span><span class="menupoint">
+                            <a href="product.html" class="line-point">Продукт</a>
+                            <span>
+                                <a href="product.html" class="pulldown-point">Кепка</a>
+                                <a href="#" class="pulldown-point">Беломор</a>
+                                <a href="#" class="pulldown-point">Прима</a>
+                                <a href="#" class="pulldown-point">Пиво</a>
+                                <a href="#" class="pulldown-point">Водка</a>
+                                <a href="#" class="pulldown-point">Вино</a>
+                            </span>
+                        </span><span class="menupoint">
+                            <a href="order.html" class="line-point">Корзина</a>
+                        </span><span class="menupoint">
+                            <a href="contacts.html" class="line-point">Контакты</a>
+                        <!--</span><span class="menupoint">
+                            <a href="#" class="line-point">Point 6</a>
+                        </span><span class="menupoint">
+                            <a href="#" class="line-point">Point 7</a>-->
+                        </span>
+                    </nav>
+                </div>
+            </header>
+            <main class="container catalog">
+                <aside>
+                    <div class="catmenu">
+                        <div class="catmenu_item">
+                            <a href="#">Кепки</a>
+                            <div class="submenu">
+                                <a href="#">Кепка-хулиганка</a>
+                                <a href="#">Кепка-Гаврош</a>
+                                <a href="#">Кепка-восьмиклинка</a>
+                                <a href="#">Бейсболка</a>
+                            </div>
+                            <div class="submenu_mover">V</div>
+                        </div>
+                        <div class="catmenu_item">
+                            <a href="#">Шузы</a>
+                            <div class="submenu">
+                                <a href="#">Кроссы</a>
+                                <a href="#">Кеды</a>
+								<a href="#">Штиблеты</a>
+                            </div>
+                            <div class="submenu_mover">V</div>
+                        </div>
+                        <div class="catmenu_item">
+                            <a href="#">Бухло</a>
+                            <div class="submenu">
+                                <a href="#">Пивас</a>
+                                <a href="#">Крепыши</a>
+                                <a href="#">Винище</a>
+                            </div>
+                            <div class="submenu_mover">V</div>
+                        </div>
+                        <div class="catmenu_item">
+                            <a href="#">Сиги</a>
+							<div class="submenu">
+								<a href="#">Ява (явская)</a>
+                                <a href="#">Беломор</a>
+                                <a href="#">Прима</a>
+							</div>
+							<div class="submenu_mover">V</div>
+						</div>
+                        <div class="catmenu_item">
+                            <a href="#">Закусь</a>
+							<div class="submenu">
+								<a href="#">Вобла</a>
+                                <a href="#">Семки</a>
+                                <a href="#">Орешки</a>
+							</div>
+							<div class="submenu_mover">V</div>
+                        </div>
+                    </div>
+                </aside>
+                <div class="order">
+                    <h1>Корзина</h1>
+                    <p class="nihil">Ваша корзина пуста.</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Наименование</th>
+                                <th scope="col">Количество</th>
+                                <th scope="col">Цена</th>
+                                <th scope="col">Сумма</th>
+                                <th scope="col">Удалить</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" data-tovar="5711">1</th>
+                                <td>Бейсболка</td>
+                                <td class="num">
+                                    <input type="number" value="10" pattern="^[0-9]*$">
+                                </td>
+                                <td class="rub">5</td>
+                                <td class="sum">50</td>
+                                <td class="del">
+                                    <div>+</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" data-tovar="3432">2</th>
+                                <td>Вобла</td>
+                                <td class="num">
+                                    <input type="number" value="10" pattern="^[0-9]*$">
+                                </td>
+                                <td class="rub">10</td>
+                                <td class="sum">100</td>
+                                <td class="del">
+                                    <div>+</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" data-tovar="4846">3</th>
+                                <td>Беломор</td>
+                                <td class="num">
+                                    <input type="number" value="10" pattern="^[0-9]*$">
+                                </td>
+                                <td class="rub">15</td>
+                                <td class="sum">150</td>
+                                <td class="del">
+                                    <div>+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th scope="row">Итого</th>
+                                <td colspan="5" class="allsum">300</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <form id="orderdata">
+                        <input type="text" id="name" placeholder="name"><br>
+                        <input type="text" id="address" placeholder="address"><br>
+                        <input type="text" id="email" placeholder="email"><br>
+                        <input type="text" id="date" placeholder="date"><br>
+                        <textarea id="comment" placeholder="comment"></textarea><br>
+                        <button type="submit">Отправить заказ</button>
+                    </form>
+                </div>
+            </main>
+            <footer>
+                <div class="topfooter container">
+					<div class="list">
+						<div class="footer_caption">Компания</div>
+							<ul class="nav footer-nav vertical-nav">
+								<li class="nav-item nav-item--col">О нас</li>
+								<li class="nav-item nav-item--col">Наша команда</li>
+								<li class="nav-item nav-item--col">История</li>
+								<li class="nav-item nav-item--col">Вакансии</li>
+							</ul>
+					</div>
+					<div class="firms">
+						<div class="footer_caption">Фирмы</div>
+							<ul class="nav footer-nav vertical-nav">
+								<li class="nav-item nav-item--col">Ява</li>
+								<li class="nav-item nav-item--col">Прима</li>
+								<li class="nav-item nav-item--col">Жигули</li>
+								<li class="nav-item nav-item--col">Адедас</li>
+							</ul>
+					</div>
+					<div class="service">
+						<div class="footer_caption">Сервис</div>
+							<ul class="nav footer-nav vertical-nav">
+								<li class="nav-item nav-item--col">Доставка</li>
+								<li class="nav-item nav-item--col">Оплата</li>
+								<li class="nav-item nav-item--col">Возврат</li>
+								<li class="nav-item nav-item--col">Гарантия</li>
+							</ul>
+					</div>
+			</div>	
+				<div class="middlefooter container">
+					<div class="call">
+						<div class="footer_caption">Контакты</div>
+							<ul class="nav footer-nav vertical-nav">
+								<li class="nav-item nav-item--col">&#9743 7 495 000 00 00</li>
+								<li class="nav-item nav-item--col">&#128231 info@webshop.ru</li>
+							</ul>
+					</div>
+					<div class="social">
+						<div class="footer_caption">Соцсети</div>
+							<ul class="nav footer-nav horizontal-nav">
+								<li class="nav-item nav-item--col"><img src="images/facebook.png" alt="facebook"></li>
+								<li class="nav-item nav-item--col"><img src="images/vkontakte.png" alt="vkontakte"></li>
+								<li class="nav-item nav-item--col"><img src="images/instagram.png" alt="instagram"></li>
+								<li class="nav-item nav-item--col"><img src="images/linked.png" alt="linked"></li>
+							</ul>
+					</div>
+					<div class="payment">
+						<div class="footer_caption">Способы оплаты</div>
+							<ul class="nav footer-nav horizontal-nav">
+								<li class="nav-item nav-item--col"><img src="images/visa.png" alt="visa"></li>
+								<li class="nav-item nav-item--col"><img src="images/mastercard.png" alt="mastercard"></li>
+								<li class="nav-item nav-item--col"><img src="images/amex.png" alt="amex"></li>
+								<li class="nav-item nav-item--col"><img src="images/mir.png" alt="mir"></li>
+								<li class="nav-item nav-item--col"><img src="images/cash.png" alt="cash"></li>
+							</ul>
+					</div>
+				</div>
+				<div class="bottomfooter container">
+					<div class="copyright">
+						2021 &copy Родин Сергей
+					</div>
+				</div>
+            </footer>
+        </div>
+        <div class="popup-desk">
+            <div class="popup">
+                
+            </div>
+        </div>
+	</body>
+</html>
